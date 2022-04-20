@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/main.css">
+	<title>Pedidos da lojinha</title>
+</head>
+<body>
+	<h2>Pedidos</h2>
+	<form id="frmPedido" action="#" method="post">
+		<label for="idUsuario">ID do usuário: </label>
+		<input type="text" class="number" name="idUsuario" id="idUsuario" maxlength="11">
+		<label for="dtPedido">Data do pedido: </label>
+		<input type="date" name="dtPedido" id="dtPedido">
+		<label for="dtPagamento">Data do pagamento: </label>
+		<input type="date" name="dtPagamento" id="dtPagamento" maxlength="19">
+		<label for="dtNotaFiscal">Data da nota fiscal: </label>
+		<input type="date" name="dtNotaFiscal" id="dtNotaFiscal" maxlength="19">
+		<label for="notaFiscal">Nota fiscal: </label>
+		<textarea name="notaFiscal" id="notaFiscal" rows="10"></textarea>
+		<label for="dtEnvio">Data do envio: </label>
+		<input type="date" name="dtEnvio" id="dtEnvio" maxlength="19">
+		<label for="dtRecebimento">Data do recebimento: </label>
+		<input type="date" name="dtRecebimento" id="dtRecebimento" maxlength="19">
+		<label for="tipoFrete">Tipo de frete: </label>
+		<select name="tipoFrete" id="tipoFrete">
+			<option value="0">Retirada</option>
+			<option value="1">PAC</option>
+			<option value="2">SEDEX</option>
+			<option value="3">MOTOBOY</option>
+			<option value="4">TRANSPORTADORA</option>
+		</select>
+		<label for="rastreioFrete">Rastreio do frete: </label>
+		<input type="text" name="rastreioFrete" id="rastreioFrete" maxlength="255">
+		<label for="entregaendereco">Endereço da entrega: </label>
+		<input type="text" name="entregaendereco" id="entregaendereco" maxlength="50">
+		<label for="entregaNumero">Número da entrega: </label>
+		<input type="text" class="number" name="entregaNumero" id="entregaNumero" maxlength="10">
+		<label for="entregaCompl">Complemento: </label>
+		<input type="text" name="entregaCompl" id="entregaCompl" maxlength="50">
+		<label for="entregaBairro">Bairro da entrega: </label>
+		<input type="text" name="entregaBairro" id="entregaBairro" maxlength="30">
+		<label for="entregaCidade">Cidade da entrega: </label>
+		<input type="text" name="entregaCidade" id="entregaCidade" maxlength="50">
+		<label for="entregaUF">UF da entrega: </label>
+		<select name="entregaUF" id="entregaUF">
+			<option value="AC">AC</option>
+			<option value="AL">AL</option>
+			<option value="AM">AM</option>
+			<option value="AP">AP</option>
+			<option value="BA">BA</option>
+			<option value="CE">CE</option>
+			<option value="DF">DF</option>
+			<option value="ES">ES</option>
+			<option value="GO">GO</option>
+			<option value="MA">MA</option>
+			<option value="MG">MG</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="PA">PA</option>
+			<option value="PB">PB</option>
+			<option value="PE">PE</option>
+			<option value="PI">PI</option>
+			<option value="PR">PR</option>
+			<option value="RJ">RJ</option>
+			<option value="RN">RN</option>
+			<option value="RO">RO</option>
+			<option value="RR">RR</option>
+			<option value="RS">RS</option>
+			<option value="SC">SC</option>
+			<option value="SE">SE</option>
+			<option value="SP">SP</option>
+			<option value="TO">TO</option>
+		</select>		
+		<label for="entregaCEP">CEP da entrega: </label>
+		<input type="text" class="cep" name="entregaCEP" id="entregaCEP" maxlength="9">
+		<label for="entregaTelefone">Telefone da entrega: </label>
+		<input type="text" class="phone" name="entregaTelefone" id="entregaTelefone" maxlength="15">
+		<label for="entregaRefer">Referência da entrega: </label>
+		<input type="text" name="entregaRefer" id="entregaRefer" maxlength="255">
+		<label for="valorTotal">Valor total: </label>
+		<input type="text" class="price" name="valorTotal" id="valorTotal" maxlength="16">
+		<label for="qtdItems">Quantidade de itens: </label>
+		<input type="text" class="number" name="qtdItems" id="qtdItems" maxlength="11">
+		<label for="dtDevolucao">Data da devolução: </label>
+		<input type="date" name="dtDevolucao" id="dtDevolucao" maxlength="19">
+		<label for="motivoDevolucao">Motivo da devolução: </label>
+		<textarea name="motivoDevolucao" id="motivoDevolucao" rows="10"></textarea>
+		<input type="button" value="Inserir" onclick="save('frmPedido', '../interfaces/pedido/create.php')">
+	</form>
+	<script src="../assets/main.js"></script>
+</body>
+</html>

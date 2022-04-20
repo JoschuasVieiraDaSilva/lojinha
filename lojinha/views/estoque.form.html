@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/main.css">
+	<title>Estoque da lojinha</title>
+</head>
+<body>
+	<h2>Estoque</h2>
+	<form id="frmEstoque" action="#" method="post">
+		<label for="idProduto"> ID do produto: </label>
+		<input type="text" class="number" name="idProduto" id="idProduto" maxlength="11">
+		<label for="dtEntrada">Data de entrada: </label>
+		<input type="date" name="dtEntrada" id="dtEntrada" maxlength="10">
+		<label for="quantidade">Quantidade: </label>
+		<input type="text" class="number" name="quantidade" id="quantidade" maxlength="11">
+		<label for="dtFabricacao">Data de fabricação: </label>
+		<input type="date" name="dtFabricacao" id="dtFabricacao" maxlength="10">
+		<label for="dtVencimento">Data de vencimento: </label>
+		<input type="date" name="dtVencimento" id="dtVencimento" maxlength="10">
+		<label for="nfCompra">Nota fiscal da compra: </label>
+		<textarea name="nfCompra" id="nfCompra" rows="10"></textarea>
+		<label for="precoCompra">Preço da compra: </label>
+		<input type="text" class="price" name="precoCompra" id="precoCompra" maxlength="23">
+		<label for="icmsCompra">ICMS da compra: </label>
+		<input type="text" class="number" name="icmsCompra" id="icmsCompra" maxlength="19">
+		<label for="precoVenda">Preço da venda: </label>
+		<input type="text" class="price" name="precoVenda" id="precoVenda" maxlength="23">
+		<label for="qtdVendida">Quantidade vendida: </label>
+		<input type="text" class="number" name="qtdVendida" id="qtdVendida" maxlength="11">
+		<label for="qtdOcorrencia">Quantidade de ocorrência: </label>
+		<input type="text" class="number" name="qtdOcorrencia" id="qtdOcorrencia" maxlength="11">
+		<label for="ocorrencia">Ocorrência: </label>
+		<input type="text" name="ocorrencia" id="ocorrencia" maxlength="1024">
+		<input type="button" value="Inserir" onclick="save('frmEstoque', '../interfaces/estoque/create.php')">
+	</form>
+	<script src="../assets/main.js"></script>
+</body>
+</html>

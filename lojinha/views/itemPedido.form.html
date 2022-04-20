@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/main.css">
+	<title>Itens dos pedidos da lojinha</title>
+</head>
+<body>
+	<h2>Itens dos pedidos</h2>
+	<form id="frmItemPedido" action="#" method="post">
+		<label for="ordem">Ordem: </label>
+		<input type="text" class="number" name="ordem" id="ordem" maxlength="11">
+		<label for="idPedido">ID do pedido: </label>
+		<input type="text" class="number" name="idPedido" id="idPedido" maxlength="11">
+		<label for="idEstoque">ID do estoque: </label>
+		<input type="text" class="number" name="idEstoque" id="idEstoque" maxlength="11">
+		<label for="qtdItem">Quantidade: </label>
+		<input type="text" class="number" name="qtdItem" id="qtdItem" maxlength="11">
+		<label for="dtDevolucao">Data da devolução: </label>
+		<input type="date" name="dtDevolucao" id="dtDevolucao" maxlength="19">
+		<label for="motivoDevolucao">Motivo da devolução: </label>
+		<textarea name="motivoDevolucao" id="motivoDevolucao" rows="10"></textarea>
+		<input type="button" value="Inserir" onclick="save('frmItemPedido', '../interfaces/itemPedido/create.php')">
+	</form>
+	<script src="../assets/main.js"></script>
+</body>
+</html>

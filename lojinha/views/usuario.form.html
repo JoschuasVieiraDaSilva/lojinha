@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/main.css">
+	<title>Usuários da lojinha</title>
+</head>
+<body>
+	<h2>Usuários</h2>
+	<form id="frmUsuario" action="#" method="post">
+		<label for="email">Email: </label>
+		<input type="email" name="email" id="email">
+		<label for="senha">Senha: </label>
+		<input type="password" name="senha" id="senha" maxlength="64">
+		<label for="idNivelUsuario">ID do nível de usuário: </label>
+		<input type="text" class="number" name="idNivelUsuario" id="idNivelUsuario" maxlength="11">
+		<label for="nome">Nome: </label>
+		<input type="text" name="nome" id="nome" maxlength="50">
+		<label for="cpf">CPF (apenas números): </label>
+		<input type="text" class="cpf" name="cpf" id="cpf" maxlength="14">
+		<label for="endereco">Endereço: </label>
+		<input type="text" name="endereco" id="endereco" maxlength="50">
+		<label for="bairro">Bairro: </label>
+		<input type="text" name="bairro" id="bairro" maxlength="30">
+		<label for="cidade">Cidade: </label>
+		<input type="text" name="cidade" id="cidade" maxlength="50">
+		<label for="uf">UF: </label>
+		<select name="uf" id="uf">
+			<option value="AC">AC</option>
+			<option value="AL">AL</option>
+			<option value="AM">AM</option>
+			<option value="AP">AP</option>
+			<option value="BA">BA</option>
+			<option value="CE">CE</option>
+			<option value="DF">DF</option>
+			<option value="ES">ES</option>
+			<option value="GO">GO</option>
+			<option value="MA">MA</option>
+			<option value="MG">MG</option>
+			<option value="MS">MS</option>
+			<option value="MT">MT</option>
+			<option value="PA">PA</option>
+			<option value="PB">PB</option>
+			<option value="PE">PE</option>
+			<option value="PI">PI</option>
+			<option value="PR">PR</option>
+			<option value="RJ">RJ</option>
+			<option value="RN">RN</option>
+			<option value="RO">RO</option>
+			<option value="RR">RR</option>
+			<option value="RS">RS</option>
+			<option value="SC">SC</option>
+			<option value="SE">SE</option>
+			<option value="SP">SP</option>
+			<option value="TO">TO</option>
+		</select>
+		<label for="cep">CEP (apenas números): </label>
+		<input type="text" class="cep" name="cep" id="cep" maxlength="9">
+		<label for="telefone">Telefone (apenas números): </label>
+		<input type="text" class="phone" name="telefone" id="telefone" maxlength="15">
+		<label for="foto">Foto: </label>
+		<input type="text" name="foto" id="foto" maxlength="255">
+		<input type="button" value="Inserir" onclick="save('frmUsuario', '../interfaces/usuario/create.php')">
+	</form>
+	<script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/main.css">
+	<title>Produtos da lojinha</title>
+</head>
+<body>
+	<h2>Produtos</h2>
+	<form id="frmProduto" action="#" method="post">
+		<label for="fabricante">Fabricante: </label>
+		<input type="text" name="fabricante" id="fabricante" maxlength="100">
+		<label for="nome">Nome: </label>
+		<input type="text" name="nome" id="nome" maxlength="100">
+		<label for="marca">Marca: </label>
+		<input type="text" name="marca" id="marca" maxlength="100">
+		<label for="modelo">Modelo: </label>
+		<input type="text" name="modelo" id="modelo" maxlength="100">
+		<label for="idCategoria">ID da categoria: </label>
+		<input type="text" class="number" name="idCategoria" id="idCategoria" maxlength="11">
+		<label for="descricao">Descrição: </label>
+		<textarea name="descricao" id="descricao" rows="10"></textarea>
+		<label for="unidadeMedida">Unidade de medida: </label>
+		<input type="text" name="unidadeMedida" id="unidadeMedida" maxlength="15">
+		<label for="largura">Largura: </label>
+		<input type="text" class="measure" name="largura" id="largura" maxlength="11">
+		<label for="altura">Altura: </label>
+		<input type="text" class="measure" name="altura" id="altura" maxlength="11">
+		<label for="profundidade">Profundidade: </label>
+		<input type="text" class="measure" name="profundidade" id="profundidade" maxlength="11">
+		<label for="peso">Peso: </label>
+		<input type="text" class="measure" name="peso" id="peso" maxlength="11">
+		<label for="cor">Cor: </label>
+		<input type="text" name="cor" id="cor" maxlength="7">
+		<input type="button" value="Inserir" onclick="save('frmProduto', '../interfaces/produto/create.php')">
+	</form>
+	<script src="../assets/main.js"></script>
+</body>
+</html>

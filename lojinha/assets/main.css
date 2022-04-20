@@ -1,0 +1,37 @@
+* {box-sizing: border-box;}
+
+body {margin: 0; padding: 20px}
+
+h2 {
+	margin: 20px auto;
+	width: max-content;
+}
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: 600px;
+	margin: auto;
+}
+
+form > input, form > select, form > textarea {
+	display: block;
+	border-radius: 10px;
+	padding: 5px;
+	border: 1px solid #555;
+	margin-bottom: 20px;
+	background-color: transparent;
+	resize: vertical;
+}
+
+form > [type="button"] {
+	margin: 10px 0;
+	width: max-content;
+	padding: 10px 30px;
+	border: none;
+	align-self: center;
+	font-weight: bold;
+	color: white;
+	background-color: #2a2;
+	cursor: pointer;
+}
